@@ -1,0 +1,72 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Loading project ddreview
+# reading C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project shiftchain
+# Compile of shiftchain_tb.sv failed with 2 errors.
+# Compile of shiftchain.sv failed with 2 errors.
+# 2 compiles, 2 failed with 4 errors.
+# Compile of shiftchain_tb.sv failed with 2 errors.
+# Compile of shiftchain.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of shiftchain_tb.sv was successful.
+# Compile of shiftchain.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.shiftchain_tb
+# vsim work.shiftchain_tb 
+# Start time: 03:14:06 on Aug 16,2025
+# Loading sv_std.std
+# Loading work.shiftchain_tb
+# ** Error: (vsim-3033) D:/projects/FIRfilter/src/shiftchain_tb.sv(5): Instantiation of 'shiftchain' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /shiftchain_tb File: D:/projects/FIRfilter/src/shiftchain_tb.sv
+#         Searched libraries:
+#             C:/intelFPGA/18.1/MyProjects/work
+# Error loading design
+# End time: 03:14:07 on Aug 16,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vsim work.shiftchain_tb
+# vsim work.shiftchain_tb 
+# Start time: 03:14:21 on Aug 16,2025
+# Loading sv_std.std
+# Loading work.shiftchain_tb
+# ** Error: (vsim-3033) D:/projects/FIRfilter/src/shiftchain_tb.sv(5): Instantiation of 'shiftchain' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /shiftchain_tb File: D:/projects/FIRfilter/src/shiftchain_tb.sv
+#         Searched libraries:
+#             C:/intelFPGA/18.1/MyProjects/work
+# Error loading design
+# End time: 03:14:22 on Aug 16,2025, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# Compile of shiftchain_tb.sv was successful.
+# Compile of shiftchain.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.shiftchain_tb
+# vsim work.shiftchain_tb 
+# Start time: 03:15:51 on Aug 16,2025
+# Loading sv_std.std
+# Loading work.shiftchain_tb
+# Loading work.shiftchain
+add wave -position insertpoint  \
+sim:/shiftchain_tb/clk
+add wave -position insertpoint  \
+sim:/shiftchain_tb/resetn
+add wave -position insertpoint  \
+sim:/shiftchain_tb/d
+add wave -position insertpoint  \
+sim:/shiftchain_tb/q
+run -600ps
+# Unknown option: 600ps
+# ** Error: (vsim-4005) Invalid argument '-600ps'.
+# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
+run 600ps
+# Compile of shiftchain_tb.sv was successful.
+# Compile of shiftchain.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# Loading work.shiftchain_tb
+# Loading work.shiftchain
+run 600ps
+add wave -position insertpoint  \
+sim:/shiftchain_tb/en
+restart -f
+run 600ps
+# End time: 03:19:15 on Aug 16,2025, Elapsed time: 0:03:24
+# Errors: 1, Warnings: 0
